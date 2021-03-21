@@ -15,8 +15,7 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto ">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/destination">Destination</Nav.Link>
-                        
+                        <Nav.Link as={Link} to="/destination">Destination</Nav.Link> 
                     </Nav>
                     <Button variant="success" as={Link} to="/signin">{loggedInUser.userName || loggedInUser.displayName ? loggedInUser.userName || loggedInUser.displayName : "Login"}</Button>
                     

@@ -17,7 +17,7 @@ const Destination = () => {
                         </Form.Group>
                         <Form.Group controlId="formBasicEnd">
                             <Form.Label>Pick To</Form.Label>
-                            <Form.Control type="text" name="journyEnd" placeholder="Gulshan" />
+                            <Form.Control type="text" name="journeyEnd" placeholder="Gulshan" />
                         </Form.Group>
                     </Form>
                     <Button className="mb-3" as={Link} to="/finalDestination" variant="primary"> Search</Button>

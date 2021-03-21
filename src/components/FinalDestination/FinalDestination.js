@@ -3,7 +3,7 @@ import './FinalDestination.css';
 import Map from '../Map/Map'
 
 
-const FinalDestination = (props) => {
+const FinalDestination = () => {
   const [ride, setRide] = useState([]);
 
   useEffect(() => {

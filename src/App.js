@@ -24,12 +24,12 @@ function App() {
           <Route path="/signin">
             <SignIn/>
           </Route>
-          <PrivateRoute path="/destination/">
+          <PrivateRoute path="/destination">
             <Destination/>
           </PrivateRoute>
-          {/* <Route path="/finalDestination">
+          <PrivateRoute path="/finalDestination">
             <FinalDestination/>
-          </Route> */}
+          </PrivateRoute>
           <Route path="*">
             <h1>404 - Not Found!</h1>
           </Route>
