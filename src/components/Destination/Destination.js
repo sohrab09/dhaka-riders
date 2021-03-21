@@ -2,8 +2,8 @@ import { Button } from 'react-bootstrap';
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import map from '../Image/Map.png'
 import './Destination.css'
+import Map from '../Map/Map'
 
 const Destination = () => {
     return (
@@ -22,8 +22,9 @@ const Destination = () => {
                     </Form>
                     <Button className="mb-3" as={Link} to="/finalDestination" variant="primary"> Search</Button>
                 </div>
+                <br/>
                 <div>
-                    <img className="image" src={map} alt="" />
+                    <Map></Map>
                 </div>
 
             </div>

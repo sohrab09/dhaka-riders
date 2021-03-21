@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import map from '../Image/Map.png'
 import './FinalDestination.css';
+import Map from '../Map/Map'
 
 
-const FinalDestination = () => {
+const FinalDestination = (props) => {
   const [ride, setRide] = useState([]);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const FinalDestination = () => {
       .then(res => res.json())
       .then(data => setRide(data[0]))
   }, [])
-  const { id, name, price, image } = ride;
+  const { id, title, rent, image } = ride;
   return (
     <div className=" container main-content">
 
@@ -21,18 +21,18 @@ const FinalDestination = () => {
           <h4> Gulshan </h4>
         </div>
         <div className="bike">
-          <p><img className="images" src={image} alt="" /><span style={{ marginLeft: '20px' }}> {name}</span> <span style={{ marginLeft: '20px' }}> {id}</span> <span style={{ marginLeft: '20px' }}> {price}</span></p>
+          <p><img className="images" src={image} alt="" /><span style={{ marginLeft: '20px' }}> {title}</span> <span style={{ marginLeft: '20px' }}> {id}</span> <span style={{ marginLeft: '20px' }}> {rent}</span></p>
         </div>
         <div className="bike">
-          <p><img className="images" src={image} alt="" /><span style={{ marginLeft: '20px' }}> {name}</span> <span style={{ marginLeft: '20px' }}> {id}</span> <span style={{ marginLeft: '20px' }}> {price}</span></p>
+          <p><img className="images" src={image} alt="" /><span style={{ marginLeft: '20px' }}> {title}</span> <span style={{ marginLeft: '20px' }}> {id}</span> <span style={{ marginLeft: '20px' }}> {rent}</span></p>
         </div>
         <div className="bike">
-          <p><img className="images" src={image} alt="" /><span style={{ marginLeft: '20px' }}> {name}</span> <span style={{ marginLeft: '20px' }}> {id}</span> <span style={{ marginLeft: '20px' }}> {price}</span></p>
+          <p><img className="images" src={image} alt="" /><span style={{ marginLeft: '20px' }}> {title}</span> <span style={{ marginLeft: '20px' }}> {id}</span> <span style={{ marginLeft: '20px' }}> {rent}</span></p>
         </div>
 
       </div>
       <div>
-        <img className="image" src={map} alt="" />
+        <Map></Map>
       </div>
     </div>
   );
